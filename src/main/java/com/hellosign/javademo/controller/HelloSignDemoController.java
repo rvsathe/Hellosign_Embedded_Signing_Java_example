@@ -38,6 +38,9 @@ public class HelloSignDemoController {
 		if (validRequest) {
 
 			switch (event.getTypeString()) {
+				case "callback_test":
+					logger.info("Callback Test call");
+					break;
 				case "signature_request_signed":
 					logger.info("Signature Request Signed");
 					break;
