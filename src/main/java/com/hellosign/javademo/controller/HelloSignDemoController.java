@@ -33,7 +33,7 @@ public class HelloSignDemoController {
 		JSONObject jsonObject = new JSONObject(json);
 		Event event = new Event(jsonObject);
 
-		boolean validRequest = event.isValid("a2faee0f49b83377213dfe2cb47b3eee84c40ad4cf7cbf9e43ca81b9876d0941");
+		boolean validRequest = event.isValid("<YOUR_API_TOKEN_KEY>");
 
 		if (validRequest) {
 
